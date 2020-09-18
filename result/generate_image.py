@@ -6,9 +6,7 @@ from matplotlib import pyplot as plt
 import pickle
 
 
-#1800
 # 绘制训练损失图
-#labels = glob(r'E:\Python_project\revised_hyj\loss')
 with open("loss","rb") as f:
     loss =pickle.load(f)
 print(len(loss))
@@ -25,8 +23,7 @@ with open("raw","rb") as f:
     raw =pickle.load(f)
 with open("pred","rb") as f:
     pred =pickle.load(f)
-    
-#pred = autoencoder.predict(valid_X)
+
 
 plt.figure(figsize = (20, 4))
 print("raw Image")
@@ -34,7 +31,7 @@ for i in range(5):
     plt.subplot(1, 5, i+1)
     plt.imshow(raw[i, ..., 0], plt.cm.gray)
     plt.title("raw Image_" + str(i))
-plt.savefig("raw_image.png")#show()
+plt.savefig("raw_image.png")
 
 
 plt.figure(figsize = (20, 4))
