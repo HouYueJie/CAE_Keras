@@ -5,7 +5,6 @@
 import numpy as np
 import PIL.Image as I
 from glob import glob
-from sklearn.model_selection import train_test_split
 import config as C
 
 # 读取图像数据
