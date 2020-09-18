@@ -5,8 +5,12 @@
 
 
 # 环境要求
-tensorflow
-keras
+tensorflow == 2.2.0
+keras == 2.4.3
+numpy == 1.18.5
+Pillow == 7.1.2
+matplotlib == 3.2.1
+
 
 
 
