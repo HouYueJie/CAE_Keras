@@ -4,7 +4,7 @@
 
 
 raw_data="./raw_data"
-
+ckpt_save_path="./checkpoint"
 batch_size = 64
 epochs = 20  
 inChannel = 1
